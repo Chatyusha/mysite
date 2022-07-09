@@ -16,4 +16,5 @@ jobs:
     - name: publish
       run: |
         mv build docs
-        git --version
+        git add .
+        git push origin public
