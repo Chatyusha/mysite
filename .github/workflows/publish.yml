@@ -3,16 +3,17 @@ name: publish
 on:
   push:
     branches:
-      - master
+      - public
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@master
-    - name: gitTest
+    - name: Build
+      run: npm run build
+    
+    - name: publish
       run: |
+        mv build docs
         git --version
-        ls
-        git status
-        git config --list
