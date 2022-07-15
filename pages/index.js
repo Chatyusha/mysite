@@ -1,4 +1,5 @@
-import Nav from '../components/navigation'
+import CommonMeta from '../components/meta'
+import NavMenu from '../components/nav'
 
 export default function Home() {
   // return (
@@ -7,10 +8,11 @@ export default function Home() {
   //   </h1>
   // )
   return (
-    <dev>
-    <Nav>
-    </Nav>
-    <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </dev>
+    <div>
+      <CommonMeta title={"MainPage"}/>
+      <div>
+        <NavMenu />
+      </div>
+    </div>
   )
 }
