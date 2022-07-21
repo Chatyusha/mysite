@@ -30,3 +30,8 @@ jobs:
       run: yarn next export
     - name: rename
       run: mv out docs
+    - name: publish
+      run: |
+        git add.
+        git commit -m "publish-$(date)"
+        git push origin publish
