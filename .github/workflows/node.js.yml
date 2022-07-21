@@ -27,7 +27,9 @@ jobs:
     - name: export
       run: yarn next export
     - name: rename
-      run: mv -T out/ docs/
+      run: |
+        mkdir docs
+        mv -T out/ docs/
     - name: publish
       run: |
         git config --global user.name ${{secrets.NAME}}
