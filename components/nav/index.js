@@ -1,25 +1,13 @@
-import Head from "next";
-
 function NavMenu() {
     return (
-        <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav uk-padding-small">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Item</a></li>
+        <div className={"uk-navbar-container"} uk-navbar="true">
+            <div className={"uk-navbar-left"}>
+                <ul className={"uk-navbar-nav"}>
+                    <li className={"uk-active"}><a href="">hoge</a></li>
+                    <li className={"uk-parent"}><a href="">fuga</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
     )
 }
 

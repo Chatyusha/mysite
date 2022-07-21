@@ -1,17 +1,14 @@
-import CommonMeta from '../components/meta'
-import NavMenu from '../components/nav'
+import CommonMeta from "../components/meta"
+import NavMenu from "../components/nav"
+import SimpleDrowdown from "../components/dropdown/simple"
 
 export default function Home() {
-  // return (
-  //   <h1 className="text-3xl font-bold underline">
-  //     Hello world!
-  //   </h1>
-  // )
   return (
     <div>
-      <CommonMeta title={"MainPage"}/>
+      <CommonMeta title={"Home"}></CommonMeta>
       <div>
-        <NavMenu />
+        <NavMenu></NavMenu>
+        <SimpleDrowdown parent={"hoge"} child={"piyo"}></SimpleDrowdown>
       </div>
     </div>
   )
