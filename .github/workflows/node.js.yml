@@ -23,6 +23,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - name: setup 
-      run: yarn add next react react-dom sass
+      run: yarn add next react react-dom sass uikit
     - name: build
       run: yarn run build
+    - name: export
+      run: yarn next export
+    - name: rename
+      run: mv out docs
