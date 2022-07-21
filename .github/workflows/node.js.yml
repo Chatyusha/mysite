@@ -32,6 +32,6 @@ jobs:
       run: mv out docs
     - name: publish
       run: |
-        git add.
+        git add .
         git commit -m "publish-$(date)"
-        git push origin publish
+        git push origin public
