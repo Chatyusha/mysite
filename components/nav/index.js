@@ -1,3 +1,5 @@
+import SimpleDrowdown from "../dropdown/simple"
+
 function NavMenu() {
     return (
         <div className={"uk-navbar-container"} uk-navbar="true">
