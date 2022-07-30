@@ -59,18 +59,6 @@ function NavMenu() {
         <div className={"uk-navbar-container"} uk-navbar="true">
             <div className={"uk-navbar-left"}>
                 <ul className={"uk-navbar-nav"}>
-                    {/* <li>
-                        <a>hoge</a>
-                        <div className={"uk-navbar-dropdown"}>
-                            <ul className={"uk-nav","uk-navbar-dropdown-nav"}>
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-
-                            </ul>
-                        </div>
-                        
-                    </li> */}
                     {NavMenuJSX}
                 </ul>
             </div>
