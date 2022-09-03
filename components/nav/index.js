@@ -36,35 +36,41 @@ var NavTree = [
         ]
     }
 ]
-var NavMenuJSX = NavTree.map(item => 
+let NavMenuJSX = NavTree.forEach(item =>
     {
-        var Items = item.items.map(element => {return <li>{element}</li>})
+        var Items = []
+        item.items.forEach(element => {Items.push(<li>{element}</li>)})
         return (
-            <dev>
-                <li>
-                    <a>{item.category}</a>
-                </li>
-                <div className={"uk-navbar-dropdown"}>
-                    <ul className={"uk-nav","uk-navbar-dropdown-nav"}>
-                        <li>{Items}</li>
-                    </ul>
-                </div>
+            <dev className={"uk-navbar-left"}>
+                <ul className={"uk-navbar-nav"}>
+                    <li>
+                         <a>{item.category}</a>
+                     </li>
+                     <div className={"uk-navbar-dropdown"}>
+                         <ul className={"uk-nav","uk-navbar-dropdown-nav"}>
+                            {Items}
+                         </ul>
+                     </div>
+                 </ul>
             </dev>
         )
-    }
-)
-
+    })
 function NavMenu() {
     return (
-        <div className={"uk-navbar-container"} uk-navbar="true">
-            <div className={"uk-navbar-left"}>
+        <dev className={"uk-navbar-container"} uk-navbar="true">
+            <dev className={"uk-navbar-left"}>
                 <ul className={"uk-navbar-nav"}>
-                    {NavMenuJSX}
+                    {/* <li>
+                        <a>ほげ</a>
+                    </li>
+                    <div className={"uk-navbar-dropdown"}>
+                        <ul className={"uk-nav","uk-navbar-dropdown-nav"}>
+                            <li>ふが</li>
+                        </ul>
+                    </div> */}
                 </ul>
-            </div>
-            <div>
-            </div>
-        </div>
+            </dev>
+        </dev>
     )
 }
 
