@@ -4,4 +4,9 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  // some configuration
+  assetPrefix: process.env.NODE_ENV === "production" ? "/mysite" : ""
+  // another configuration
+};
+
